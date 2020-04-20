@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-thedaviddias",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "ESLint config for my react projects",
   "homepage": "https://github.com/thedaviddias/eslint-config-thedaviddias#readme",
   "bugs": {
@@ -14,9 +14,7 @@
   "author": "David Dias <thedaviddias@gmail.com> (https://thedaviddias.dev)",
   "main": "index.js",
   "scripts": {
-    "find-new-rules": "npm-run-all --parallel find-new-rules:*",
-    "find-new-rules:main": "eslint-find-rules --unused ./index.js",
-    "test": "npm-run-all --parallel find-new-rules"
+    "test": "echo \"Error: no test specified\" && exit 0"
   },
   "keywords": [
     "javascript",
