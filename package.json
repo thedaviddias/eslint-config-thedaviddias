@@ -14,8 +14,7 @@
   "author": "David Dias <thedaviddias@gmail.com> (https://thedaviddias.dev)",
   "main": "index.js",
   "scripts": {
-    "find-new-rules": "npm-run-all --parallel find-new-rules:*",
-    "test": "npm-run-all --parallel find-new-rules"
+    "test": "echo \"Error: no test specified\" && exit 0"
   },
   "keywords": [
     "javascript",
