@@ -1,0 +1,67 @@
+{
+  "name": "eslint-config-thedaviddias",
+  "version": "0.0.1",
+  "description": "ESLint config for my react projects",
+  "homepage": "https://github.com/thedaviddias/eslint-config-thedaviddias#readme",
+  "bugs": {
+    "url": "https://github.com/thedaviddias/eslint-config-thedaviddias/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thedaviddias/eslint-config-thedaviddias.git"
+  },
+  "license": "MIT",
+  "author": "David Dias <thedaviddias@gmail.com> (https://thedaviddias.dev)",
+  "main": "index.js",
+  "scripts": {
+    "find-new-rules": "npm-run-all --parallel find-new-rules:*",
+    "find-new-rules:main": "eslint-find-rules --unused ./index.js",
+    "test": "npm-run-all --parallel find-new-rules"
+  },
+  "keywords": [
+    "javascript",
+    "ecmascript",
+    "eslint",
+    "lint",
+    "config",
+    "prettier"
+  ],
+  "eslintConfig": {
+    "extends": "./index.js"
+  },
+  "eslintIgnore": [
+    "node_modules",
+    "coverage",
+    "dist"
+  ],
+  "dependencies": {
+    "babel-eslint": "10.1.0",
+    "eslint-config-prettier": "6.10.1",
+    "eslint-plugin-babel": "5.3.0",
+    "eslint-plugin-import": "^2.18.0",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-prettier": "^3.0.1",
+    "eslint-plugin-react": "^7.14.2",
+    "eslint-plugin-react-hooks": "3.0.0",
+    "prettier": "2.0.4",
+    "read-pkg-up": "7.0.1",
+    "semver": "7.3.2"
+  },
+  "devDependencies": {
+    "eslint": "6.8.0",
+    "eslint-find-rules": "3.4.0",
+    "npm-run-all": "4.1.5",
+    "pretty-quick": "2.0.1"
+  },
+  "peerDependencies": {
+    "eslint": ">=6"
+  },
+  "engines": {
+    "node": ">=8.10",
+    "npm": ">=6",
+    "yarn": ">=1"
+  },
+  "hooks": {
+    "pre-commit": "pretty-quick --staged && npm run validate"
+  }
+}
