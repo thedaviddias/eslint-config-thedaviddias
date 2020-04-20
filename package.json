@@ -15,7 +15,6 @@
   "main": "index.js",
   "scripts": {
     "find-new-rules": "npm-run-all --parallel find-new-rules:*",
-    "find-new-rules:main": "eslint-find-rules --unused ./index.js",
     "test": "npm-run-all --parallel find-new-rules"
   },
   "keywords": [
