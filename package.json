@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-thedaviddias",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "ESLint config for my react projects",
   "homepage": "https://github.com/thedaviddias/eslint-config-thedaviddias#readme",
   "bugs": {
